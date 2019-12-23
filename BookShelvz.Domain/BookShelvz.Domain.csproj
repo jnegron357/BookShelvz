@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <NullableReferenceTypes>true</NullableReferenceTypes>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
 
 </Project>

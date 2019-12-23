@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace BookShelvz.Domain
 {
-    public class ComicBook
+    public class ComicBook : Publication
     {
         public int Volume { get; set; }
         public int Issue { get; set; }
@@ -15,6 +15,5 @@ namespace BookShelvz.Domain
         public List<Writer> Writers { get; set; }
         public List<Inker> Inkers { get; set; }
         public List<Colorist> Colorists { get; set; }
-
     }
 }
