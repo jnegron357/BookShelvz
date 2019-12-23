@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text;
 
-namespace BookShelvz.Domain
+namespace BookShelvz.Domain.Models
 {
-    public interface IPerson
+    public class Penciler : IPerson
     {
         public int Id { get; set; }
         [Required]

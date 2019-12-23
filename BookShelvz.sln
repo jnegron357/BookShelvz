@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShelvz.Data", "BookShelvz.Data\BookShelvz.Data.csproj", "{195171CE-4023-4B00-A051-E5DEA8E1D8EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShelvz.Data", "BookShelvz.Data\BookShelvz.Data.csproj", "{195171CE-4023-4B00-A051-E5DEA8E1D8EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShelvz.Domain", "BookShelvz.Domain\BookShelvz.Domain.csproj", "{16D39321-A67F-414D-9975-0FBE76728A06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShelvz.Domain", "BookShelvz.Domain\BookShelvz.Domain.csproj", "{16D39321-A67F-414D-9975-0FBE76728A06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShelvz.App", "BookShelvz.App\BookShelvz.App.csproj", "{CC452C65-148D-44C2-A930-4BE2FFC8650A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{16D39321-A67F-414D-9975-0FBE76728A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16D39321-A67F-414D-9975-0FBE76728A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16D39321-A67F-414D-9975-0FBE76728A06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC452C65-148D-44C2-A930-4BE2FFC8650A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC452C65-148D-44C2-A930-4BE2FFC8650A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC452C65-148D-44C2-A930-4BE2FFC8650A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC452C65-148D-44C2-A930-4BE2FFC8650A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
