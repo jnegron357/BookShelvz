@@ -1,9 +1,12 @@
 ﻿using BookShelvz.Domain.Contracts;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text;
 
 namespace BookShelvz.Domain.Models
 {
-    public class Penciler : IPerson
+    public class Colorist : IPerson
     {
         public int Id { get; set; }
         [Required]

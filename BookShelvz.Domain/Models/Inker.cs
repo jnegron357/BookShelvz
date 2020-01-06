@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using BookShelvz.Domain.Contracts;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace BookShelvz.Domain.Models
 {

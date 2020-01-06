@@ -1,9 +1,9 @@
-﻿using BookShelvz.Domain.Contracts;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace BookShelvz.Domain.Models
+namespace BookShelvz.Domain.Contracts
 {
-    public class Penciler : IPerson
+    public interface IPerson
     {
         public int Id { get; set; }
         [Required]
