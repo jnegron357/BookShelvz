@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BookShelvz.Data\BookShelvz.Data.csproj" />
+    <ProjectReference Include="..\BookShelvz.Domain\BookShelvz.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
