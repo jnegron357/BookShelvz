@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using BookShelvz.Domain;
-using System.Configuration;
+using BookShelvz.Domain.Models;
 
 namespace BookShelvz.Data
 {
@@ -16,22 +15,11 @@ namespace BookShelvz.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=BookShelvzData;Trusted_Connection=True;MultipleActiveResultSets=True");
-            //TODO: Figure out how to use app settings 
-            //optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["default"].ConnectionString);
+            //optionsBuilder.UseSqlServer(conn);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<SamuraiBattle>()
-            //    .HasKey(s => new { s.SamuraiId, s.BattleId });
-            modelBuilder.Entity<Book>().HasBaseType<Publication>();
-            modelBuilder.Entity<ComicBook>().HasBaseType<Publication>();
-            modelBuilder.Entity<Penciler>().HasBaseType<Person>();
-            modelBuilder.Entity<Inker>().HasBaseType<Person>();
-            modelBuilder.Entity<Colorist>().HasBaseType<Person>();
-            modelBuilder.Entity<Writer>().HasBaseType<Person>();
-
             base.OnModelCreating(modelBuilder);
         }
     }
