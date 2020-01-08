@@ -26,8 +26,9 @@ namespace BookShelvz.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.AddControllersWithViews();
             services.AddRazorPages();
-            services.AddDbContext<BookShelvzContext>(options => options.UseSqlServer(ConfigurationManager.GetSection("ConnectionString")));
+            services.AddDbContext<BookShelvzContext>(options => options.UseSqlServer(Configuration.GetConnectionString("BookShelvzConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,11 +47,9 @@ namespace BookShelvz.Web
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseStatusCodePages();
             app.UseRouting();
-
-            app.UseAuthorization();
-
+            //app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
