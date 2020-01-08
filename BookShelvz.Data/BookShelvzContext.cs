@@ -13,10 +13,13 @@ namespace BookShelvz.Data
         public DbSet<Publisher> Publishers { get; set; }
         public DbSet<ComicBook> ComicBooks { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            //optionsBuilder.UseSqlServer(conn);
-        }
+        public BookShelvzContext(DbContextOptions<BookShelvzContext> options):base(options)
+        {  }
+
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    //optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=BookShelvzData;Trusted_Connection=True;MultipleActiveResultSets=True");
+        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
