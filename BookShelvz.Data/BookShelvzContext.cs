@@ -13,6 +13,9 @@ namespace BookShelvz.Data
         public DbSet<Publisher> Publishers { get; set; }
         public DbSet<ComicBook> ComicBooks { get; set; }
 
+        public BookShelvzContext()
+        { }
+
         public BookShelvzContext(DbContextOptions<BookShelvzContext> options):base(options)
         {  }
 
